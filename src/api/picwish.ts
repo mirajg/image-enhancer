@@ -1,4 +1,4 @@
-import { env } from "../config/env";
+
 import { ApiError } from "../types";
 import type { Mode } from "../types";
 
