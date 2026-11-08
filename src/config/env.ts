@@ -9,13 +9,7 @@ const requireEnv = (key: keyof ImportMetaEnv): string => {
     return value.trim();
 };
 
+
 export const env = {
-    // Getter: the error is thrown only when the key is used, so the app still
-    // loads and the UI can show a readable message instead of a blank page.
-    get picwishApiKey(): string {
-        return requireEnv("VITE_PICWISH_API_KEY");
-    },
-    picwishBaseUrl:
-        import.meta.env.VITE_PICWISH_BASE_URL?.trim() || "https://techhk.aoscdn.com",
-    maxFileMB: Number(import.meta.env.VITE_MAX_FILE_MB) || 10,
+  maxFileMB: Number(import.meta.env.VITE_MAX_FILE_MB) || 4,
 } as const;
