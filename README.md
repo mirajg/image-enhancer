@@ -34,7 +34,7 @@ npm install
 Create a `.env` file in the project root (next to `package.json`):
 
 ```dotenv
-VITE_PICWISH_API_KEY=your_key_here
+PICWISH_API_KEY=your_key_here
 VITE_PICWISH_BASE_URL=https://techhk.aoscdn.com
 VITE_MAX_FILE_MB=10
 ```
